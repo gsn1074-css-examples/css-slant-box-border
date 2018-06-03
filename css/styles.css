@@ -1,0 +1,19 @@
+.slant {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; }
+
+.slant::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3em;
+  left: -2em;
+  width: 150%;
+  background: #fff;
+  height: 6em;
+  transform: rotate(8deg);
+  transition: transform 1s; }
+
+.slant:hover::before {
+  transform: rotate(-8deg); }
